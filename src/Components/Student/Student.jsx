@@ -36,6 +36,14 @@ const Student = () => {
     }
 
 
+    // student delete
+    const handleStuDelete = (id) => {
+
+        axios.delete('http://localhost:8000/students/' + id).then();
+
+    }
+
+
     // Get all data
     useEffect(() => {
 
@@ -112,9 +120,9 @@ const Student = () => {
                                                 <td>{ data.gender }</td>
                                                 <td>{ data.skills }</td>
                                                 <td>
-                                                <Button variant='info'> </Button>&nbsp;
-                                                <Button variant='warning'>  </Button>&nbsp;
-                                                <Button variant='danger'></Button>
+                                                <Button variant='info' className="btn-sm">View </Button>&nbsp;
+                                                <Button variant='warning' className="btn-sm">Edit</Button>&nbsp;
+                                                <Button onClick={ () => handleStuDelete(data.id) } variant='danger' className="btn-sm">Delete</Button>
                                                 </td>
                                             </tr>
                                         
