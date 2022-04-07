@@ -1,0 +1,16 @@
+{
+    "student" : [
+        {
+            "id"            : 1,
+            "name"          : "nahian khondokar",
+            "skill"         : "MEARN Stack Developer",
+            "gender"        : "male"
+        },
+        {
+            "id"            : 2,
+            "name"          : "Selim Khan",
+            "skill"         : "Laravel Developer",
+            "gender"        : "male"
+        }
+    ]
+}
